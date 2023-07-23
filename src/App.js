@@ -26,7 +26,7 @@ Instead of step = step +1, do [step, setStep] = useState(n) setStep((s)=>s-1)
 
   return (
     <div>
-      <button onClick={() => setIsOpen(!isOpen)} className="close">
+      <button onClick={() => setIsOpen((o) => !o)} className="close">
         &times;
       </button>
       {isOpen && (
