@@ -7,6 +7,9 @@ const messages = [
 ];
 
 const App = () => {
+  /* React is IMMUTABLE, so update values, use designated functions for it
+Instead of step = step +1, do [step, setStep] = useState(n) setStep(step + 1)
+  */
   const [step, setStep] = useState(1);
 
   const handlePrevious = () => {
