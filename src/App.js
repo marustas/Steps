@@ -14,13 +14,13 @@ Instead of step = step +1, do [step, setStep] = useState(n) setStep((s)=>s-1)
   const [isOpen, setIsOpen] = useState(true);
   const handlePrevious = () => {
     if (step >= 1) {
-      setStep(step - 1);
+      setStep((s) => s - 1);
     }
   };
 
   const handleNext = () => {
     if (step <= 3) {
-      setStep(step + 1);
+      setStep((s) => s + 1);
     }
   };
 
